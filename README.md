@@ -300,7 +300,7 @@ Contributions are welcome! Please feel free to:
 
 ## 📄 License
 
-This template is released under the GNU-3.0 License. See LICENSE file for details.
+This template is released under the MIT License. See LICENSE file for details.
 
 ## 🙏 Acknowledgments
 
