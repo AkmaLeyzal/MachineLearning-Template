@@ -4,13 +4,13 @@ A comprehensive template to start Machine Learning and Deep Learning projects wi
 
 ## 📋 Table of Contents
 
-- [Overview](#overview)
-- [Quick Start](#quick-start)
-- [Template Structure](#template-structure)
-- [Installation Guide](#installation-guide)
-- [Use Cases](#use-cases)
-- [Best Practices](#best-practices)
-- [Troubleshooting](#troubleshooting)
+- [Overview](#-overview)
+- [Quick Start](#-quick-start)
+- [Template Structure](#-template-structure)
+- [Installation Guide](#-installation-guide)
+- [Use Cases](#-use-cases)
+- [Best Practices](#-best-practices)
+- [Troubleshooting](#-troubleshooting)
 
 ## 🎯 Overview
 
