@@ -26,39 +26,39 @@ This template provides:
 ### 1. Clone/Download Template
 
 ```bash
-git clone [repository-url]
-cd ml-dl-template
+git clone https://github.com/AkmaLeyzal/MachineLearning-Template.git
+cd MachineLearning-Template
 ```
 
 ### 2. Setup Virtual Environment
-
+#### For Linux/Mac using Venv
 ```bash
-# Using venv
-python -m venv ml_env
-source ml_env/bin/activate  # Linux/Mac
-# or
-ml_env\Scripts\activate     # Windows
+python -m venv ml_env       # you can change "ml_env" as you want
+source ml_env/bin/activate  
+```
 
-# Using conda
-conda create -n ml_env python=3.9
+#### For Windows using Venv
+```bash
+python -m venv ml_env       # you can change "ml_env" as you want
+ml_env\Scripts\activate     
+```
+
+#### using Conda
+```bash
+conda create -n ml_env python=3.9   # you can change "ml_env" as you want
 conda activate ml_env
 ```
 
 ### 3. Install Dependencies
+#### Install according to use case (see requirements.txt)
 
 ```bash
-# Install minimal dependencies
-pip install pandas numpy scikit-learn matplotlib seaborn jupyter
-
-# Or install according to use case (see requirements.txt)
 pip install -r requirements_minimal.txt
 ```
 
-### 4. Start Jupyter Notebook
+### 4. Start Jupyter Notebook or Another Notebook
 
 ```bash
-jupyter notebook
-# or
 jupyter lab
 ```
 
@@ -66,24 +66,23 @@ jupyter lab
 
 - Open the main template file
 - Uncomment required libraries
-- Start coding!
+- Start coding! 😝😝😝
 
 ## 📁 Template Structure
 
 ```
 MachineLearning-Template/
 ├── Notebooks/
-│   └── MachineLearning-Template       # Fully completed template
+│   └── MachineLearning-Template      # Main and Fully completed template
 ├── Datasets/
-│   ├── RawData/                       # Raw data
-│   ├── ProcessedData/                 # Processed data
-│   └── ExternalData/                  # External data
+│   ├── RawData/                      
+│   ├── ProcessedData/                
+│   └── ExternalData/                  
 ├── Models/
-│   ├── DummyModel/                  # Utility functions
+│   ├── DummyModel/                  
 │   ├── HyperparameterModel/
-│   ├── TestingModel/                    # Model definitions
-│   └── FinalModel/                        # Configuration files
-├── .env
+│   ├── TestingModel/                    
+│   └── FinalModel/                        
 ├── requirements
 ├── LICENSE
 └── README.md
@@ -91,53 +90,15 @@ MachineLearning-Template/
 
 ## 🛠 Installation Guide
 
-### For Different Use Cases
+### Install library according to use case
+- Open requirements.txt
+- Uncomment using `Ctrl + /` or Delete `#` for library you will use
+- Then Run `pip install -r requirements.txt` on your terminal
 
-#### 📊 Basic Data Science
-```bash
-pip install pandas numpy matplotlib seaborn scikit-learn jupyter
-```
-
-#### 🧠 Deep Learning with TensorFlow
-```bash
-pip install tensorflow pandas numpy matplotlib scikit-learn
-# For GPU support (Linux/Windows)
-pip install tensorflow[and-cuda]
-```
-
-#### 🔥 Deep Learning with PyTorch
-```bash
-# CPU version
-pip install torch torchvision pandas numpy matplotlib scikit-learn
-
-# GPU version (check https://pytorch.org/ for CUDA version)
-pip install torch torchvision --index-url https://download.pytorch.org/whl/cu118
-```
-
-#### 💬 Natural Language Processing
-```bash
-pip install transformers datasets tokenizers pandas numpy scikit-learn
-# Optional: spacy, nltk, gensim
-```
-
-#### 👁 Computer Vision
-```bash
-pip install opencv-python pillow albumentations torch torchvision matplotlib
-```
-
-#### ⏰ Time Series Analysis
-```bash
-pip install pandas numpy statsmodels prophet scikit-learn matplotlib
-```
-
-#### 🚀 MLOps & Production
-```bash
-pip install mlflow fastapi uvicorn docker pandas numpy scikit-learn
-```
 
 ### Platform-Specific Notes
 
-#### 🍎 Apple Silicon (M1/M2) Macs
+#### 🍎 Apple Silicon (M-chip series) Macs
 ```bash
 # For TensorFlow
 pip install tensorflow-macos tensorflow-metal
@@ -204,17 +165,7 @@ from sklearn.metrics import mean_absolute_error
 - Document used versions
 - Use fixed train/validation splits
 
-### 4. **Memory Management**
-```python
-# For large datasets
-import gc
-gc.collect()
-
-# For pandas
-pd.options.mode.chained_assignment = None
-```
-
-### 5. **GPU Optimization**
+### 4. **GPU Optimization**
 ```python
 # TensorFlow
 import tensorflow as tf
@@ -247,25 +198,7 @@ python -c "import torch; print(torch.cuda.is_available())"
 python -c "import tensorflow as tf; print(tf.config.list_physical_devices('GPU'))"
 ```
 
-#### 3. **Memory Issues**
-```python
-# Reduce batch size
-# Use data generators/loaders
-# Clear unused variables
-del variable_name
-gc.collect()
-```
-
-#### 4. **Kernel Keeps Dying**
-```bash
-# Increase memory limit
-jupyter notebook --NotebookApp.max_buffer_size=1000000000
-
-# Or use JupyterLab
-jupyter lab --LabApp.max_buffer_size=1000000000
-```
-
-#### 5. **SSL Certificate Issues**
+#### 3. **SSL Certificate Issues**
 ```bash
 pip install --trusted-host pypi.org --trusted-host pypi.python.org --trusted-host files.pythonhosted.org [package]
 ```
@@ -314,3 +247,5 @@ This template is released under the MIT License. See LICENSE file for details.
 **Happy Machine Learning! 🚀**
 
 *This template will be continuously updated along with the evolution of the ML/DL ecosystem*
+
+© 2023 Akmaleyzal
