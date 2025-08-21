@@ -1,0 +1,492 @@
+## ============================================================================
+## MACHINE LEARNING & DEEP LEARNING - REQUIREMENTS.TXT
+## ============================================================================
+## Template ini berisi semua library yang mungkin dibutuhkan untuk project ML/DL
+## Uncomment (#) library yang dibutuhkan sesuai dengan project Anda
+## Versi dapat disesuaikan dengan kebutuhan dan compatibility
+## Pastikan untuk mengupdate versi library sesuai dengan kebutuhan project Anda
+## ============================================================================
+
+## ============================================================================
+## =                        Akmaleyzal - 21/08/2023                           =
+## ============================================================================
+
+## ============================================================================
+## 1. CORE DATA SCIENCE LIBRARIES
+## ============================================================================
+
+## Data manipulation and analysis
+pandas>=2.0.0                    # Data manipulation dan analysis
+numpy>=1.24.0                    # Numerical computing
+scipy>=1.10.0                    # Scientific computing
+# polars>=0.18.0                   # Fast DataFrame library
+
+## Data visualization
+matplotlib>=3.7.0                # Basic plotting
+seaborn>=0.12.0                  # Statistical data visualization
+# plotly>=5.14.0                 # Interactive visualizations
+# bokeh>=3.1.0                   # Interactive web-based visualizations
+# altair>=5.0.0                  # Declarative statistical visualization
+
+## Progress bars and utilities
+# tqdm>=4.65.0                   # Progress bars
+pathlib>=2.3.7                   # Object-oriented filesystem paths
+pytz>=2023.3                     # Timezone support
+python-dotenv>=1.0.0             # Environment variable management
+# joblib>=1.3.0                  # Lightweight pipelining and parallel processing
+# dateutil>=2.8.2                # Extensions to datetime
+
+## ============================================================================
+## 2. TRADITIONAL MACHINE LEARNING
+## ============================================================================
+
+## Scikit-learn ecosystem
+scikit-learn>=1.3.0              # Machine learning library
+# imbalanced-learn>=0.10.0        # Handle imbalanced datasets
+# scikit-optimize>=0.9.0          # Bayesian optimization
+# scikit-multilearn>=0.2.0        # Multi-label classification
+# scikit-image>=0.20.0            # Image processing
+
+## Feature selection and engineering
+# feature-engine>=1.6.0           # Feature engineering transformations
+# boruta>=0.3                     # Feature selection algorithm
+
+## ============================================================================
+## 3. DEEP LEARNING FRAMEWORKS
+## ============================================================================
+
+## TensorFlow and Keras
+# tensorflow>=2.13.0              # Deep learning framework
+# tensorflow-gpu>=2.13.0          # GPU support for TensorFlow (if needed)
+# tensorflow-datasets>=4.9.0      # Pre-built datasets for TensorFlow
+# tensorflow-probability>=0.20.0  # Probabilistic modeling with TensorFlow
+# keras>=2.13.0                   # High-level neural networks API
+# tensorboard>=2.13.0             # TensorBoard visualization
+# keras-tuner>=1.3.0              # Hyperparameter tuning for Keras
+# keras-nlp>=0.6.0                # Natural language processing with Keras
+# keras-vision>=0.6.0             # Computer vision with Keras
+# keras-audio>=0.6.0              # Audio processing with Keras
+
+## PyTorch ecosystem
+# torch>=2.0.0                    # PyTorch deep learning framework
+# torchvision>=0.15.0             # Computer vision for PyTorch
+# torchaudio>=2.0.0               # Audio processing for PyTorch
+# torchtext>=0.15.0               # Text processing for PyTorch
+# pytorch-cuda>=2.0.0             # CUDA support for PyTorch (if needed)
+# pytorch-lightning>=2.0.0        # High-level PyTorch wrapper
+# torchmetrics>=0.11.0            # Metrics for PyTorch
+# ignite>=0.4.10                  # High-level library for training PyTorch models
+# fastai>=2.7.0                   # High-level library for PyTorch
+# catalyst>=23.9.0                # High-level framework for PyTorch
+
+## JAX (Google's NumPy-compatible library)
+# jax>=0.4.0                      # NumPy-compatible array library
+# jaxlib>=0.4.0                   # XLA library for JAX
+# jax-datasets>=0.2.0             # Datasets for JAX
+# haiku>=0.0.9                    # Neural networks for JAX
+# optax>=0.1.5                    # Gradient processing and optimization library for JAX
+# flax>=0.6.0                     # Neural network library for JAX
+# optax>=0.1.5                    # Gradient processing and optimization
+
+## ============================================================================
+## 4. GRADIENT BOOSTING LIBRARIES
+## ============================================================================
+
+## XGBoost
+# xgboost>=1.7.0                  # Extreme Gradient Boosting
+
+## LightGBM
+# lightgbm>=3.3.0                 # Light Gradient Boosting Machine
+
+## CatBoost
+# catboost>=1.2.0                 # Categorical Boosting
+
+## ============================================================================
+## 5. NATURAL LANGUAGE PROCESSING
+## ============================================================================
+
+## Traditional NLP
+# nltk>=3.8.0                     # Natural Language Toolkit
+# spacy>=3.6.0                    # Industrial-strength NLP
+# textblob>=0.17.0                # Simple text processing
+# gensim>=4.3.0                   # Topic modeling and document similarity
+
+## Modern NLP (Transformers)
+# transformers>=4.30.0            # Hugging Face Transformers
+# tokenizers>=0.13.0              # Fast tokenizers for Transformers
+# datasets>=2.13.0                # Datasets library for NLP
+# sentence-transformers>=2.2.0    # Sentence embeddings
+# torch-audio>=2.0.0              # Audio processing for NLP
+
+## Language detection and translation
+# langdetect>=1.0.9               # Language detection
+# googletrans>=4.0.0              # Google Translate API
+# fairseq>=0.10.2                 # Facebook AI Research Sequence-to-Sequence Toolkit
+
+## Text preprocessing
+# contractions>=0.1.73            # English contractions expansion
+# unidecode>=1.3.6                # ASCII transliterations
+# ftfy>=6.1.0                     # Fix Unicode text
+# regex>=2023.6.3                 # Regular expressions
+# stopwords>=2023.1.1             # Stopwords for various languages
+# nltk_data>=3.8.0                # NLTK data files
+# spacy-models>=3.6.0             # Pre-trained spaCy models
+
+## ============================================================================
+## 6. COMPUTER VISION
+## ============================================================================
+
+## OpenCV
+# opencv-python>=4.7.0            # Computer vision library
+# opencv-contrib-python>=4.7.0    # Additional OpenCV modules
+# opencv-python-headless>=4.7.0   # Headless version for server environments
+
+## Image processing
+# pillow>=9.5.0                   # Python Imaging Library
+# imageio>=2.28.0                 # Image I/O
+# scikit-image>=0.20.0            # Image processing algorithms
+# tifffile>=2023.7.26             # TIFF file support
+# pydicom>=2.4.0                  # DICOM file support
+# simpleitk>=2.1.0                # Simplified ITK for medical imaging
+
+## Data augmentation
+# albumentations>=1.3.0           # Image augmentation library
+# imgaug>=0.4.0                   # Image augmentation
+# augmentor>=0.2.12               # Image augmentation pipeline
+# torchvision.transforms>=0.15.0  # Image transformations for PyTorch
+# kornia>=0.6.0                   # Computer vision library for PyTorch
+
+## ============================================================================
+## 7. TIME SERIES ANALYSIS
+## ============================================================================
+
+## Statistical time series
+# statsmodels>=0.14.0             # Statistical models
+# pmdarima>=2.0.0                 # Auto ARIMA
+# prophet>=1.1.4                  # Facebook Prophet
+# pyflux>=0.4.17                  # Time series library
+
+## Time series specific tools
+# tslearn>=0.6.0                  # Machine learning for time series
+# sktime>=0.20.0                  # Unified ML framework for time series
+# tsfresh>=0.20.0                 # Automatic feature extraction
+# darts>=0.24.0                   # Time series forecasting library
+# aeon>=0.6.0                     # Time series analysis and machine learning
+# ruptures>=1.1.0                 # Change point detection
+# stumpy>=1.9.0                   # Matrix profile for time series analysis
+# tsmoothie>=0.2.0                # Time series smoothing
+# tsaug>=0.2.0                    # Time series data augmentation
+# sktime-dl>=0.6.0                # Deep learning for time series
+
+## Financial time series
+# yfinance>=0.2.0                 # Yahoo Finance data
+# quantlib>=1.24.0                # Quantitative finance library
+# ccxt>=0.1.0                     # Cross-asset finance data
+# fredapi>=0.3.0                  # Federal Reserve Economic Data API
+# quandl>=3.7.0                   # Financial and economic data
+# alpha_vantage>=2.3.1            # Alpha Vantage API for financial data
+# finrl>=0.3.0                    # Financial Reinforcement Learning
+# pandas-datareader>=0.10.0       # Financial data reader
+# ta>=0.10.0                      # Technical analysis indicators
+# bactter>=0.2.0                  # Backtesting framework for trading strategies
+
+## ============================================================================
+## 8. HYPERPARAMETER OPTIMIZATION
+## ============================================================================
+
+## Optuna
+# optuna>=3.2.0                   # Hyperparameter optimization framework
+# optuna-dashboard>=0.10.0        # Web dashboard for Optuna
+# optuna-vision>=0.1.0            # Vision-specific Optuna utilities
+# optuna-sklearn>=0.1.0           # Optuna integration for scikit-learn
+# optuna-torch>=0.1.0             # Optuna integration for PyTorch
+# optuna-tensorflow>=0.1.0        # Optuna integration for TensorFlow
+# optuna-xgboost>=0.1.0           # Optuna integration for XGBoost
+# optuna-lightgbm>=0.1.0          # Optuna integration for LightGBM
+# optuna-catboost>=0.1.0          # Optuna integration for CatBoost
+# optuna-keras>=0.1.0             # Optuna integration for Keras
+
+## Other optimization libraries
+# hyperopt>=0.2.7                 # Hyperparameter optimization
+# nevergrad>=0.4.3                # Gradient-free optimization
+# bayesian-optimization>=1.4.0    # Bayesian optimization library
+# ray[tune]>=2.4.0                # Scalable hyperparameter tuning
+# scikit-optimize>=0.9.0          # Bayesian optimization
+# ax-platform>=0.3.0              # Adaptive experimentation platform
+# sigopt>=8.0.0                   # SigOpt optimization platform
+# tune-sklearn>=0.4.0             # Hyperparameter tuning for scikit-learn
+# tune-torch>=0.4.0               # Hyperparameter tuning for PyTorch
+# tune-tensorflow>=0.4.0          # Hyperparameter tuning for TensorFlow
+# tune-keras>=0.4.0               # Hyperparameter tuning for Keras
+
+## ============================================================================
+## 9. MODEL INTERPRETATION & EXPLAINABILITY
+## ============================================================================
+
+## SHAP
+# shap>=0.41.0                    # SHapley Additive exPlanations
+# shapash>=1.6.0                  # SHAP-based model explanation
+
+## LIME
+# lime>=0.2.0.1                   # Local Interpretable Model-agnostic Explanations
+# alibi>=0.8.0                    # Model agnostic explanations
+# alibi-detect>=0.8.0             # Outlier and drift detection
+# alibi-explain>=0.8.0            # Model explanations and interpretability
+
+
+## Other interpretation tools
+# eli5>=0.13.0                    # Debug machine learning classifiers
+# yellowbrick>=1.5.0              # Visual analysis and diagnostic tools
+# interpret>=0.4.0                # Machine learning interpretability
+# dalex>=1.4.0                    # Model agnostic explanations
+# captum>=0.6.0                   # Model interpretability for PyTorch
+
+## ============================================================================
+## 10. MLOPS & MODEL DEPLOYMENT
+## ============================================================================
+
+## Experiment tracking
+# mlflow>=2.4.0                   # ML lifecycle management
+# wandb>=0.15.0                   # Weights & Biases experiment tracking
+# neptune-client>=1.2.0           # Neptune experiment management
+# comet-ml>=3.33.0                # Comet ML experiment tracking
+# tensorboard>=2.13.0             # TensorBoard for experiment tracking
+# sacred>=0.8.2                   # Experiment management
+# aim>=3.0.0                      # Experiment tracking and visualization
+
+## Model serving
+# flask>=2.3.0                    # Web framework for model serving
+# fastapi>=0.100.0                # Modern web framework for APIs
+# uvicorn>=0.22.0                 # ASGI server for FastAPI
+# streamlit>=1.23.0               # Web app framework for ML
+# gradio>=3.35.0                  # Web interface for ML models
+# dash>=2.10.0                    # Web application framework for Python
+# gunicorn>=20.1.0                # WSGI HTTP server for serving Flask/FastAPI apps
+# seldon-core>=1.16.0             # Seldon Core for model deployment
+# bentoml>=1.0.0                  # BentoML for model serving
+# onnx>=1.14.0                    # Open Neural Network Exchange format
+# onnxruntime>=1.15.0             # ONNX runtime for inference
+
+## Docker and containerization
+# docker>=6.1.0                   # Docker SDK for Python
+# docker-compose>=1.29.2          # Docker Compose for multi-container applications
+# kubernetes>=24.0.0              # Kubernetes client for Python
+# kserve>=0.10.0                  # Kubernetes model serving
+# airflow>=2.8.0                  # Apache Airflow for workflow management
+# prefect>=2.10.0                 # Prefect for data workflows
+# luigi>=3.0.0                    # Luigi for workflow management
+# dagster>=1.0.0                  # Dagster for data orchestration
+# mlflow-kubernetes>=0.1.0        # MLflow integration with Kubernetes
+
+## Cloud services SDKs
+# boto3>=1.26.0                   # AWS SDK
+# google-cloud-storage>=2.9.0     # Google Cloud Storage
+# azure-storage-blob>=12.16.0     # Azure Blob Storage
+# azureml-sdk>=1.50.0             # Azure Machine Learning SDK
+# databricks-sdk>=0.10.0          # Databricks SDK for Python
+# sagemaker>=2.140.0              # AWS SageMaker SDK
+# gcloud>=0.18.0                  # Google Cloud SDK for Python
+# datadog>=0.42.0                 # Datadog monitoring and logging
+# opentelemetry-sdk>=1.20.0       # OpenTelemetry SDK for distributed tracing
+
+
+## ============================================================================
+## 11. DATABASE AND DATA SOURCES
+## ============================================================================
+
+## SQL databases
+# sqlalchemy>=2.0.0               # SQL toolkit
+# psycopg2-binary>=2.9.0          # PostgreSQL adapter
+# pymysql>=1.0.3                  # MySQL adapter
+# pyodbc>=4.0.39                  # ODBC database connector
+# sqlite3                         # Built-in SQLite support
+
+## NoSQL databases
+# pymongo>=4.3.0                  # MongoDB driver
+# redis>=4.5.0                    # Redis client
+# cassandra-driver>=3.28.0        # Apache Cassandra driver
+# elasticsearch>=8.10.0           # Elasticsearch client
+# couchdb>=3.0.0                  # CouchDB client
+# neo4j>=5.10.0                   # Neo4j graph database driver
+# influxdb>=5.3.0                 # InfluxDB client
+# arango-python>=0.9.0            # ArangoDB driver
+# firebase-admin>=5.2.0           # Firebase Admin SDK
+
+## File formats and I/O
+# pyarrow>=12.0.0                 # Apache Arrow (Parquet files)
+# h5py>=3.8.0                     # HDF5 files
+# openpyxl>=3.1.0                 # Excel files (.xlsx)
+# xlrd>=2.0.1                     # Excel files (.xls)
+# python-dotenv>=1.0.0            # Load environment variables
+# jsonlines>=3.1.0                # JSON Lines format
+# feather>=0.4.0                  # Feather file format
+# pyodbc>=4.0.39                  # ODBC database connector
+
+## ============================================================================
+## 12. WEB SCRAPING AND APIs
+## ============================================================================
+
+## Web scraping
+# requests>=2.31.0                # HTTP library
+# beautifulsoup4>=4.12.0          # HTML/XML parsing
+# scrapy>=2.9.0                   # Web scraping framework
+# selenium>=4.10.0                # Web browser automation
+# lxml>=4.9.2                     # XML and HTML processing
+# feedparser>=6.0.10              # RSS/Atom feed parsing
+
+## API handling
+# httpx>=0.24.0                   # Async HTTP client
+# aiohttp>=3.8.0                  # Async HTTP client/server
+# requests-oauthlib>=1.3.1        # OAuth support for requests
+# google-api-python-client>=2.80.0 # Google APIs client library
+# tweepy>=4.12.0                  # Twitter API client
+# facebook-sdk>=3.1.0             # Facebook Graph API client
+# github3.py>=2.1.0               # GitHub API client
+# slack-sdk>=3.20.0               # Slack API client
+# telegram>=0.0.1                 # Telegram Bot API client
+# pyTelegramBotAPI>=4.0.0         # Python wrapper for Telegram Bot API
+# pyowm>=3.3.0                    # OpenWeatherMap API client
+# pygithub>=1.55.0                # GitHub API client
+# pybit>=1.0.0                    # BitMEX API client
+# pycoingecko>=3.0.0              # CoinGecko API client
+# coinmarketcap>=1.0.0            # CoinMarketCap API client
+# cryptocompare>=1.0.0            # CryptoCompare API client 
+# newsapi-python>=0.2.6           # News API client
+
+## ============================================================================
+## 13. AUDIO PROCESSING
+## ============================================================================
+
+## Audio libraries
+# librosa>=0.10.0                 # Audio analysis
+# soundfile>=0.12.0               # Read/write sound files
+# pydub>=0.25.0                   # Audio manipulation
+# wave                            # Built-in WAV file support
+# pyaudio>=0.2.11                 # Audio I/O
+# audioread>=2.1.9                # Audio file reading
+# scipy.io.wavfile>=1.10.0        # WAV file I/O
+# audiomentations>=0.34.0         # Audio data augmentation
+# sox>=1.4.1                      # Sound eXchange for audio processing
+# sounddevice>=0.4.4              # Audio playback and recording
+# pyAudioAnalysis>=0.3.8          # Audio feature extraction and classification
+# essentia>=2.1.0                 # Audio analysis and processing
+
+## Speech processing
+# speechrecognition>=3.10.0       # Speech recognition
+# pyttsx3>=2.90                   # Text-to-speech
+# pocketsphinx>=0.1.15            # Speech recognition engine
+# vosk>=0.3.38                    # Offline speech recognition
+# pyttsx>=1.1                     # Text-to-speech synthesis
+# gTTS>=2.2.3                     # Google Text-to-Speech
+# pocketsphinx>=0.1.15            # Offline speech recognition
+# vosk>=0.3.38                    # Offline speech recognition
+# deepspeech>=0.9.3               # Mozilla DeepSpeech for speech-to-text
+
+## ============================================================================
+## 14. JUPYTER NOTEBOOK EXTENSIONS AND TOOLS
+## ============================================================================
+
+## Jupyter ecosystem
+jupyter>=1.0.0                   # Jupyter metapackage
+jupyterlab>=4.0.0                # JupyterLab interface
+notebook>=6.5.4                  # Classic Jupyter Notebook
+ipywidgets>=8.0.0                # Interactive widgets
+# jupyterlab-widgets>=3.0.0       # Lab extension for widgets
+
+## Jupyter extensions
+# jupyter_contrib_nbextensions>=0.7.0   # Community extensions
+# jupyterlab-git>=0.41.0                # Git extension for JupyterLab
+# jupyterlab-lsp>=4.2.0                 # Language Server Protocol
+# jupyterlab_code_formatter>=1.4.0      # Code formatting in JupyterLab
+# jupyterlab-server>=2.0.0              # JupyterLab server
+# jupyterlab-plotly>=5.14.0             # Plotly integration for JupyterLab
+# jupyterlab-latex>=3.0.0               # LaTeX support in JupyterLab
+
+
+## ============================================================================
+## 15. DEVELOPMENT TOOLS
+## ============================================================================
+
+## Code quality
+# black>=23.0.0                   # Code formatter
+# isort>=5.12.0                   # Import sorter  
+# flake8>=6.0.0                   # Linting
+# mypy>=1.3.0                     # Type checking
+# pre-commit>=3.3.0               # Git hooks
+# pylint>=2.17.0                  # Code analysis
+# bandit>=1.7.0                   # Security analysis
+# pyflakes>=2.6.0                 # Static code analysis
+# pycodestyle>=2.11.0             # Style guide enforcement
+# yapf>=0.32.0                    # Code formatter
+# ruff>=0.3.0                     # Fast Python linter
+
+## Testing
+# pytest>=7.3.0                   # Testing framework
+# pytest-cov>=4.1.0               # Coverage plugin for pytest
+# hypothesis>=6.75.0              # Property-based testing
+# tox>=4.0.0                      # Testing multiple environments
+# coverage>=6.5.0                 # Code coverage measurement
+
+## Documentation
+# sphinx>=7.0.0                   # Documentation generator
+# mkdocs>=1.4.0                   # Markdown documentation
+# mkdocs-material>=9.0.0          # Material theme for MkDocs
+# pdoc>=0.10.0                    # API documentation generator
+# pydocstyle>=6.3.0               # Python docstring style checker
+# docutils>=0.19                  # ReStructuredText processing
+# sphinx-rtd-theme>=1.2.0         # Read the Docs theme for Sphinx
+
+## ============================================================================
+## 16. SPECIALIZED LIBRARIES
+## ============================================================================
+
+## Reinforcement Learning
+# stable-baselines3>=2.0.0        # Reliable RL implementations
+# gym>=0.26.0                     # Toolkit for RL algorithms
+# ray[rllib]>=2.4.0               # Scalable RL library
+# dopamine-rl>=3.0.0              # Google’s RL framework
+# pettingzoo>=1.20.0              # Multi-agent RL environments
+# tianshou>=0.6.0                 # Deep RL library
+# rllib>=2.4.0                    # Ray's RL library
+# ray[tune]>=2.4.0                # Ray's hyperparameter tuning library
+# ray[serve]>=2.4.0               # Ray's model serving library
+
+## Graph Neural Networks
+# torch-geometric>=2.3.0          # Graph neural networks for PyTorch
+# dgl>=1.1.0                      # Deep Graph Library
+# networkx>=3.1.0                 # Network analysis
+# stellargraph>=1.2.0             # Graph machine learning library
+# spektral>=1.2.0                 # Graph neural networks for TensorFlow
+# graph-tool>=2.45.0              # Efficient graph analysis
+# pygsp>=0.5.0                    # Graph signal processing
+# graph-nets>=1.1.0               # Graph networks for TensorFlow
+# graph-embedding>=0.1.0          # Graph embedding techniques
+# graphviz>=0.20.1                # Graph visualization
+# networkit>=8.0.0                # High-performance network analysis
+# pyvis>=0.3.1                    # Interactive network visualization
+
+## Quantum Computing (ML)
+# qiskit>=0.43.0                  # Quantum computing framework
+# pennylane>=0.30.0               # Quantum machine learning
+# cirq>=0.14.0                    # Google’s quantum computing framework
+# pyquil>=3.0.0                   # Rigetti’s quantum programming framework
+# qsharp>=0.20.200713.1           # Microsoft’s quantum programming framework
+# forest-sdk>=0.1.0               # Forest SDK for quantum computing
+# qiskit-aer>=0.11.0              # High-performance simulator for Qiskit
+# qiskit-ibmq-provider>=0.19.0    # IBM Quantum Experience
+# qiskit-nature>=0.5.0            # Quantum chemistry with Qiskit
+
+## Geospatial Analysis
+# geopandas>=0.13.0               # Geospatial data analysis
+# folium>=0.14.0                  # Interactive maps
+# geopy>=2.3.0                    # Geocoding library
+# rasterio>=1.3.0                 # Raster data processing
+# shapely>=2.0.0                  # Geometric objects
+# pyproj>=3.5.0                   # Projections and transformations
+# fiona>=1.8.20                   # Vector data I/O
+# cartopy>=0.20.0                 # Cartographic projections and geospatial data visualization
+# osmnx>=1.2.0                    # OpenStreetMap data for urban analysis
+# pydeck>=0.8.0                   # WebGL-powered geospatial visualization
+# rasterstats>=0.16.0             # Zonal statistics for raster data
+# geemap>=0.10.0                  # Geospatial analysis with Earth Engine
+# geocoder>=1.38.0                # Geocoding library
